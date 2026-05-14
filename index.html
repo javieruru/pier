@@ -1910,7 +1910,7 @@ document.getElementById('searchInput')?.addEventListener('input',()=>actualizarS
           color=document.getElementById('inp-color').value,
           moves=document.getElementById('inp-moves').value;
     if(!nombre){document.getElementById('inp-nombre').focus();mostrarToast('⚠ Ingresá el nombre');return;}
-    if(!metros||parseFloat(metros)<70){document.getElementById('inp-metros').focus();mostrarToast('⚠ Eslora mínima 70 m');return;}
+    if(!metros||parseFloat(metros)<30){document.getElementById('inp-metros').focus();mostrarToast('⚠ Eslora mínima 30 m');return;}
     if(!manga||parseFloat(manga)<8){document.getElementById('inp-manga').focus();mostrarToast('⚠ Manga mínima 8 m');return;}
     const notas=document.getElementById('inp-notas').value.trim();
     if(agregarBuque(nombre,metros,manga,color,bandaVal,moves,notas))cerrar();
